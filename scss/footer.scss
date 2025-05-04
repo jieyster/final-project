@@ -1,0 +1,74 @@
+footer {
+    height: 455px;
+    background-color: #EE4367;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 42px;
+        width: 92px;
+        fill: white;
+        margin-bottom: 46px;
+    }
+
+    p {
+        font-family: "GS";
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: white;
+    }
+    input{
+        width: 529px;
+        height: 60px;
+        padding: 20px;
+        font-size: 16px;
+        background-color: #F56B88;
+        border: none;
+        margin: 0;
+    }
+    input::placeholder{
+        color: white;
+        opacity: 50%;
+        font-family: "GS";
+    }
+
+    .input{
+        max-width: 696px;
+        display: flex;
+        margin-top: 46px;
+    }
+    button{
+        width: 167px;
+        height: 60px;
+        background-color: white;
+        color: #EE4367;
+        border: none;
+        margin: 0;
+        font-family: "GS";
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .socials {
+        svg {
+            margin: 30px 15px;
+        }
+    }
+
+    h2{
+        font-family: "GS";
+        font-size: 12px;
+        color: white;
+        opacity: 50%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .input {
+        width: 87%;
+    }
+}

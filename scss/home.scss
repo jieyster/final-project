@@ -1,0 +1,147 @@
+.home {
+.hero {
+    height: 500px;
+    background-color: pink;
+    background-image: linear-gradient(rgba(255,209,64,0.8),rgba(255,209,64,0.8)),url(../images/home-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+        font-family: "PTR";
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        color: white;
+        font-size: 20px;
+        font-family: "GSI";
+        font-weight: 100;
+        margin-bottom: 50px;
+        }
+
+    h4 {
+        color: #EE4367;
+        font-size: 20px;
+        font-family: "GSI";
+        margin-bottom: 50px;
+        font-weight: 100;
+        }
+
+    .read {
+        background-color: #EE4367;
+        width: 121px;
+        font-family: "GS";
+        color: white;
+        font-size: 15px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+.section {
+    min-height: 300px;
+    padding: 77px 245px 77px 245px;
+
+    p {
+        max-width: 789px;
+        font-family: "GSSBI";
+        color: #FFD140;
+        line-height: 22px;
+        font-weight: 100;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-family: "PTR";
+        font-size: 15px;
+        color: #EE4367;
+        margin-bottom: 5px;
+    }
+
+    h5 {
+        font-family: "PTR";
+        font-size: 10px;
+        color: #A8A8A8;
+    }
+}
+.events {
+    background-color: #540D6E;
+    min-height: 320px;
+    padding: 50px 40px 50px 40px;
+    h1 {
+        color: white;
+        font-family: "GS";
+        font-size: 25px;
+        letter-spacing: 3px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 2px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        .box {
+            height: 124px;
+            width: 216px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+
+            .date {
+                height: 60px;
+                width: 60px;
+                color: white;
+                text-align: center;
+                background-color: #EE4367;
+                
+                h2 {
+                    font-family: "GSB";
+                    font-size: 22px;
+                    margin-bottom: 0px;
+                    margin-top: 10px;
+                }
+                h3 {
+                    font-family: "GSL";
+                    font-size: 12px;
+                }
+            }
+            .words {
+                width: 140px;
+                h5{
+                    font-family: "GS";
+                    font-size: 15px;
+                    color: white;
+                }
+                h6{
+                    font-family: "GS";
+                    font-size: 13px;
+                    color: #EE4367; 
+                }
+            }
+        }
+    }
+
+}
+
+}
+@media screen and (max-width: 1240px) {
+    .home > .section {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

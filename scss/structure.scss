@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "PTB";
+    src: url(../fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+    font-family: "PTBI";
+    src: url(../fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "PTI";
+    src: url(../fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+    font-family: "PTR";
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+    font-family: "GSBI";
+    src: url(../fonts/GillSans-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "GSB";
+    src: url(../fonts/GillSans-Bold.ttf);
+}
+@font-face {
+    font-family: "GSI";
+    src: url(../fonts/GillSans-Italic.ttf);
+}
+@font-face {
+    font-family: "GSL";
+    src: url(../fonts/GillSans-Light.ttf);
+}
+@font-face {
+    font-family: "GSLI";
+    src: url(../fonts/GillSans-LightItalic.ttf);
+}
+@font-face {
+    font-family: "GSSB";
+    src: url(../fonts/GillSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "GSSBI";
+    src: url(../fonts/GillSans-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: "GSUB";
+    src: url(../fonts/GillSans-UltraBold.ttf);
+}
+@font-face {
+    font-family: "GS";
+    src: url(../fonts/GillSans.ttf);
+}
+
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+ 
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 500px;
+    font-family: "GS";
+}

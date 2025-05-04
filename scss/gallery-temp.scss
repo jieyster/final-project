@@ -1,0 +1,71 @@
+.gallery-temp {
+    padding: 140px 150px 73px 150px;
+
+    .hero {
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .title {
+        
+        margin-top: -275px;
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+        text-shadow: 5px 5px 6px rgba(0,0,0,0.16);
+        font-family: "GS";
+        margin-bottom: 0px;
+        
+
+        h1 {
+            font-size: 300px;
+            font-weight: lighter;
+        }
+        h2 {
+            font-size: 140px;
+            
+            font-weight: lighter;
+        }
+        .big {
+            font-size: 115px;
+        }
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        
+        p{
+            font-size: 16px;
+            font-family: "GSLI";
+            line-height: 22px;
+            font-weight: 100;
+            letter-spacing: 1.7px;
+            margin-top: -30px;
+            max-width: 490px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery-temp {
+        padding: 140px 12% 73px 12%;
+
+        .title > h1{
+            font-size: 100px;
+            margin-top: 300px;
+            margin-left: 4%;
+        }
+        .title > h2{
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+
+        .title >.big {
+            font-size: 60px;
+        }
+    }
+
+}

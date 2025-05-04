@@ -1,0 +1,692 @@
+@font-face {
+  font-family: "PTB";
+  src: url(../fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: "PTBI";
+  src: url(../fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "PTI";
+  src: url(../fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+  font-family: "PTR";
+  src: url(../fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "GSBI";
+  src: url(../fonts/GillSans-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "GSB";
+  src: url(../fonts/GillSans-Bold.ttf);
+}
+@font-face {
+  font-family: "GSI";
+  src: url(../fonts/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: "GSL";
+  src: url(../fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: "GSLI";
+  src: url(../fonts/GillSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: "GSSB";
+  src: url(../fonts/GillSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: "GSSBI";
+  src: url(../fonts/GillSans-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: "GSUB";
+  src: url(../fonts/GillSans-UltraBold.ttf);
+}
+@font-face {
+  font-family: "GS";
+  src: url(../fonts/GillSans.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 500px;
+  font-family: "GS";
+}
+
+nav {
+  height: 90px;
+  border-bottom: solid 2px #fff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  color: #EE4367;
+  width: 64%;
+  margin-left: 17%;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 20.5px 0 20.5px;
+  font-family: "GS";
+}
+nav .logo {
+  height: 42px;
+  width: 92px;
+  background-image: url(../images/logo-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav2 {
+  height: 90px;
+  background-color: white;
+  border-bottom: solid 2px black;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+  color: #79ADDC;
+  width: 64%;
+}
+.nav2 a {
+  text-decoration: none;
+  color: black;
+  padding: 0 20.5px 0 20.5px;
+}
+.nav2 .logo {
+  height: 42px;
+  width: 92px;
+  background-image: url(../images/logo-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav-colored {
+  background-color: #000;
+}
+
+.about {
+  padding: 150px 150px 100px 150px;
+}
+.about .hero {
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/about.jpg);
+  height: 378.75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about h1 {
+  font-family: "GS";
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+  margin-top: -25px;
+}
+.about p {
+  font-size: 16px;
+  font-family: "GSLI";
+  line-height: 22px;
+  font-weight: 100;
+  letter-spacing: 1.7px;
+  margin-top: 50px;
+}
+
+.blog {
+  padding: 150px 150px 100px 150px;
+}
+.blog h1 {
+  font-family: "GS";
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+  margin-bottom: 30px;
+}
+.blog .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.blog .section {
+  text-decoration: none;
+  max-width: 460px;
+  display: flex;
+  gap: 20px;
+}
+.blog .section .date {
+  height: 60px;
+  width: 60px;
+  color: white;
+  text-align: center;
+  background-color: #EE4367;
+}
+.blog .section .date h2 {
+  font-family: "GSB";
+  font-size: 22px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+.blog .section .date h3 {
+  font-family: "GSL";
+  font-size: 12px;
+}
+.blog .section .words {
+  width: 380px;
+}
+.blog .section .words .holder {
+  height: 140px;
+  background-image: url(../images/blog.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+.blog .section .words h5 {
+  font-family: "GS";
+  font-size: 15px;
+  color: black;
+}
+.blog .section .words h6 {
+  font-family: "GS";
+  font-size: 13px;
+  color: #EE4367;
+}
+
+@media screen and (max-width: 1240px) {
+  .blog {
+    padding: 20px;
+    text-align: center;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.gallery {
+  padding: 160px 150px 60px 150px;
+}
+.gallery h1 {
+  font-family: "GS";
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+.gallery .box1 {
+  margin-top: 40px;
+  height: 187px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .a {
+  background-color: lightblue;
+  width: 489px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7)), url(../images/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .b {
+  background-color: orange;
+  width: 187px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.7)), url(../images/2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .c {
+  background-color: palegoldenrod;
+  width: 265px;
+  background-image: linear-gradient(rgba(8, 173, 105, 0.7)), url(../images/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .box2 {
+  height: 306px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.gallery .d {
+  width: 603px;
+  background-image: linear-gradient(rgba(84, 13, 110, 0.7)), url(../images/4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery .e {
+  width: 355px;
+  background-image: linear-gradient(rgba(59, 206, 171, 0.7)), url(../images/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1280px) {
+  .gallery {
+    padding: 160px 11% 60px 11%;
+  }
+  .gallery .box1, .gallery .box2 {
+    gap: 20px;
+  }
+}
+.home .hero {
+  height: 500px;
+  background-color: pink;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .hero h1 {
+  color: white;
+  font-family: "PTR";
+  font-size: 40px;
+  font-weight: 100;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.home .hero h5 {
+  color: white;
+  font-size: 20px;
+  font-family: "GSI";
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+.home .hero h4 {
+  color: #EE4367;
+  font-size: 20px;
+  font-family: "GSI";
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.home .hero .read {
+  background-color: #EE4367;
+  width: 121px;
+  font-family: "GS";
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .section {
+  min-height: 300px;
+  padding: 77px 245px 77px 245px;
+}
+.home .section p {
+  max-width: 789px;
+  font-family: "GSSBI";
+  color: #FFD140;
+  line-height: 22px;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.home .section h1 {
+  font-family: "PTR";
+  font-size: 15px;
+  color: #EE4367;
+  margin-bottom: 5px;
+}
+.home .section h5 {
+  font-family: "PTR";
+  font-size: 10px;
+  color: #A8A8A8;
+}
+.home .events {
+  background-color: #540D6E;
+  min-height: 320px;
+  padding: 50px 40px 50px 40px;
+}
+.home .events h1 {
+  color: white;
+  font-family: "GS";
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+.home .events .row {
+  display: flex;
+  justify-content: space-between;
+}
+.home .events .row .box {
+  height: 124px;
+  width: 216px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.home .events .row .box .date {
+  height: 60px;
+  width: 60px;
+  color: white;
+  text-align: center;
+  background-color: #EE4367;
+}
+.home .events .row .box .date h2 {
+  font-family: "GSB";
+  font-size: 22px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.home .events .row .box .date h3 {
+  font-family: "GSL";
+  font-size: 12px;
+}
+.home .events .row .box .words {
+  width: 140px;
+}
+.home .events .row .box .words h5 {
+  font-family: "GS";
+  font-size: 15px;
+  color: white;
+}
+.home .events .row .box .words h6 {
+  font-family: "GS";
+  font-size: 13px;
+  color: #EE4367;
+}
+
+@media screen and (max-width: 1240px) {
+  .home > .section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+footer {
+  height: 455px;
+  background-color: #EE4367;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  height: 42px;
+  width: 92px;
+  fill: white;
+  margin-bottom: 46px;
+}
+footer p {
+  font-family: "GS";
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: white;
+}
+footer input {
+  width: 529px;
+  height: 60px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #F56B88;
+  border: none;
+  margin: 0;
+}
+footer input::placeholder {
+  color: white;
+  opacity: 50%;
+  font-family: "GS";
+}
+footer .input {
+  max-width: 696px;
+  display: flex;
+  margin-top: 46px;
+}
+footer button {
+  width: 167px;
+  height: 60px;
+  background-color: white;
+  color: #EE4367;
+  border: none;
+  margin: 0;
+  font-family: "GS";
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+footer .socials svg {
+  margin: 30px 15px;
+}
+footer h2 {
+  font-family: "GS";
+  font-size: 12px;
+  color: white;
+  opacity: 50%;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .input {
+    width: 87%;
+  }
+}
+.gallery-temp {
+  padding: 140px 150px 73px 150px;
+}
+.gallery-temp .hero {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery-temp .title {
+  margin-top: -275px;
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
+  font-family: "GS";
+  margin-bottom: 0px;
+}
+.gallery-temp .title h1 {
+  font-size: 300px;
+  font-weight: lighter;
+}
+.gallery-temp .title h2 {
+  font-size: 140px;
+  font-weight: lighter;
+}
+.gallery-temp .title .big {
+  font-size: 115px;
+}
+.gallery-temp div {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.gallery-temp div p {
+  font-size: 16px;
+  font-family: "GSLI";
+  line-height: 22px;
+  font-weight: 100;
+  letter-spacing: 1.7px;
+  margin-top: -30px;
+  max-width: 490px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery-temp {
+    padding: 140px 12% 73px 12%;
+  }
+  .gallery-temp .title > h1 {
+    font-size: 100px;
+    margin-top: 300px;
+    margin-left: 4%;
+  }
+  .gallery-temp .title > h2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+  .gallery-temp .title > .big {
+    font-size: 60px;
+  }
+}
+.contact {
+  max-width: 980px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding-top: 160px;
+}
+.contact h1 {
+  margin-bottom: 66px;
+  font-family: "GS";
+  text-decoration: underline 2px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  text-underline-offset: 10px;
+  font-size: 30px;
+}
+.contact p {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.contact .map-holder {
+  height: 442px;
+  width: 400px;
+  background-image: url(../images/map.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact .flex {
+  display: flex;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.contact .form input {
+  width: 529px;
+  height: 60px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #F5F5F5;
+  padding: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contact .form #message {
+  height: 199px;
+  padding-bottom: 160px;
+}
+.contact .send {
+  background-color: #EE4367;
+  width: 167px;
+  color: white;
+  font-size: 16px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1050px) {
+  .contact {
+    padding: 150px 20px;
+    text-align: center;
+  }
+  .contact .flex, .contact .form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .form > input {
+    margin-left: 20px;
+    width: 400px;
+  }
+}
+.blog-temp {
+  padding: 150px 150px 100px 150px;
+}
+.blog-temp .hero {
+  max-width: 981px;
+  height: 300px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.6)), url(../images/blog.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-temp .hero .date {
+  height: 155px;
+  width: 155px;
+  color: white;
+  text-align: center;
+  background-color: #EE4367;
+}
+.blog-temp .hero .date h2 {
+  font-family: "GSB";
+  font-size: 55px;
+  margin-bottom: 0px;
+  padding-top: 25px;
+}
+.blog-temp .hero .date h3 {
+  font-family: "GSL";
+  font-size: 31px;
+}
+.blog-temp h5 {
+  margin-top: 56px;
+  color: #EE4367;
+  font-size: 20px;
+  font-family: "GSL";
+}
+.blog-temp p {
+  max-width: 856px;
+  font-size: 20px;
+  font-family: "GSL";
+  line-height: 22px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  .blog-temp {
+    padding: 150px 11% 100px 11%;
+  }
+}
