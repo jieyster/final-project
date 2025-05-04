@@ -398,6 +398,7 @@ nav .logo {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  text-decoration: none;
 }
 .home .events .row .box .date {
   height: 60px;
